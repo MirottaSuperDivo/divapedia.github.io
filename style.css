@@ -129,7 +129,7 @@ button:hover{
 
 /* Colonna centrale (più grande e centrata) */
 .main-container {
-    flex-grow: 3;
+    flex: 3;
     max-width: 900px;
     width: 100%;
     background: #e7ceff;
