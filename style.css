@@ -101,3 +101,46 @@ button:hover{
     flex-wrap: wrap;
 
 }
+
+/* Wrapper generale per allineare tutto */
+.main-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 90%;
+    margin: 40px auto;
+}
+
+.main-container {
+    flex-grow: 1;
+    max-width: 600px;
+    width: 100%;
+    background: #e7ceff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.citation-column {
+    width: 250px; /* Fissa la larghezza */
+    background-color: #f6f0fd;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 14px;
+    flex-shrink: 0; /* Evita che si ridimensioni */
+}
+
+@media (max-width: 900px) {
+    .main-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .citation-column {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
