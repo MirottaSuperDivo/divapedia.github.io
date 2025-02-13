@@ -105,10 +105,10 @@ button:hover{
 /* Wrapper generale per allineare tutto */
 .main-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content:left;
     align-items: flex-start;
     gap: 40px;
-    max-width: 90%;
+    max-width: 100%;
     margin: 40px auto;
 }
 
@@ -124,7 +124,7 @@ button:hover{
 }
 
 .citation-column {
-    margin-left: 20pxss;
+    margin: 30px;
     width: 250px; /* Fissa la larghezza */
     background-color: #f6f0fd;
     padding: 15px;
