@@ -116,9 +116,8 @@ button:hover{
 /* Colonna sinistra (più piccola) */
 .citation-column-left {
     flex: 1;
-    max-width: 250px;
-    min-width: 150px;
-    width: 250px; /* Fissa la larghezza */
+    max-width: 350px;
+    min-width: 250px;
     background-color: #f6f0fd;
     padding: 15px;
     border-radius: 10px;
@@ -143,9 +142,8 @@ button:hover{
 /* Colonna destra (spazio vuoto simile a sinistra) */
 .citation-column-right {
     flex: 1;
-    max-width: 250px;
-    min-width: 150px;
-    width: 250px; /* Fissa la larghezza */
+    max-width: 350px;
+    min-width: 250px;
     background-color: var(--bg);
     padding: 15px;
     border-radius: 10px;
