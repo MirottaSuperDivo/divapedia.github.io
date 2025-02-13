@@ -102,16 +102,29 @@ button:hover{
 
 }
 
-/* Wrapper generale per allineare tutto */
+/* Wrapper per la sezione principale */
 .main-wrapper {
     display: flex;
-    justify-content:left;
+    justify-content:center;
     align-items: flex-start;
     gap: 40px;
     max-width: 100%;
     margin: 40px auto;
 }
 
+/* Colonna sinistra (più piccola) */
+.citation-column-left {
+    width: 250px; /* Fissa la larghezza */
+    background-color: #f6f0fd;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 14px;
+    flex-shrink: 0; /* Evita che si ridimensioni */
+}
+
+/* Colonna centrale (più grande e centrata) */
 .main-container {
     flex-grow: 1;
     max-width: 600px;
@@ -123,13 +136,12 @@ button:hover{
     text-align: center;
 }
 
-.citation-column {
-    margin-left: 60px;
+/* Colonna destra (spazio vuoto simile a sinistra) */
+.citation-column-right {
     width: 250px; /* Fissa la larghezza */
-    background-color: #f6f0fd;
+    background-color: var(--bg);
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     font-size: 14px;
     flex-shrink: 0; /* Evita che si ridimensioni */
@@ -138,10 +150,10 @@ button:hover{
 @media (max-width: 900px) {
     .main-wrapper {
         flex-direction: column;
-        align-items: left;
+        align-items: flex-start;
     }
-    .citation-column {
-        width: 90%;
+    .citation-column-left, .citation-column-right {
+        width: 90%; /* Adatta le colonne ai dispositivi più piccoli */
         margin-bottom: 20px;
     }
 }
