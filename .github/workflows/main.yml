@@ -12,7 +12,7 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ftp.divapalma.altervista.org
-        username: ${{ divapalma }}
-        password: ${{ RtSvu4bnt3qj }}
-        protocol: ftps
+        username: divapalma
+        password: RtSvu4bnt3qj
+        protocol: ftp
         server-dir: /DivaPedia/
