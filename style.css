@@ -152,6 +152,36 @@ button:hover{
     font-size: 14px;
 }
 
+.citation {
+    display: flex;
+    align-items: center;
+    background-color: #f6f0fd;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.citation .color-bar {
+    width: 8px;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    margin-right: 10px;
+}
+
+.citation .text {
+    flex: 1;
+    text-align: left;
+    font-size: 14px;
+}
+
+/* Colori personalizzati per ogni persona */
+.citation.divo .color-bar { background-color: rgb(255, 0, 85); }
+.citation.clochard .color-bar { background-color: brown; }
+.citation.monella .color-bar { background-color: rgb(48, 4, 97); }
+.citation.mscrociere .color-bar { background-color: rgb(229, 255, 0); }
+.citation.mm .color-bar { background-color: green; }
+
 @media (max-width: 900px) {
     .main-wrapper {
         flex-direction: column;
