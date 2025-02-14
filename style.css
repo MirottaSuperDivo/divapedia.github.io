@@ -152,7 +152,7 @@ button:hover{
     font-size: 14px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1400px) {
     .main-wrapper {
         flex-direction: column;
         align-items: center;
