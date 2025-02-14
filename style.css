@@ -160,14 +160,16 @@ button:hover{
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
+    min-height: 40px; /* Aggiunto per garantire altezza sufficiente */
 }
 
 .citation .color-bar {
     width: 8px;
-    height: 100%;
+    min-height: 40px; /* Altezza minima */
     border-radius: 10px 0 0 10px;
     margin-right: 10px;
 }
+
 
 .citation .text {
     flex: 1;
@@ -177,10 +179,10 @@ button:hover{
 
 /* Colori personalizzati per ogni persona */
 .citation.divo .color-bar { background-color: rgb(255, 0, 85); }
-.citation.clochard .color-bar { background-color: brown; }
-.citation.monella .color-bar { background-color: rgb(48, 4, 97); }
-.citation.mscrociere .color-bar { background-color: rgb(229, 255, 0); }
-.citation.mm .color-bar { background-color: green; }
+.citation.clochard .color-bar { background-color: rgb(185, 121, 84); }
+.citation.monella .color-bar { background-color: rgb(243, 35, 181); }
+.citation.mscrociere .color-bar { background-color: rgb(255, 230, 0); }
+.citation.mm .color-bar { background-color: rgb(0, 238, 255); }
 
 @media (max-width: 900px) {
     .main-wrapper {
