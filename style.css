@@ -31,6 +31,20 @@ h1 {
     left: 0;
   }
 
+.logo-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.logo-container img {
+    height: 60px; /* Regola l'altezza del logo */
+    width: auto;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 h3{
 
     text-align: center;
