@@ -19,30 +19,34 @@ body, h1{
 }
 
 h1 {
-    width: 100%; /* Occupa tutta la larghezza */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Mantiene il testo centrato */
+    width: 100%;
     color: var(--title-color);
     background-color: var(--text-bg);
-    text-align: center;
-    font-family:Lexend, sans-serif;
-    font-weight:bolder;
-    padding: 20px 0;
+    font-family: Lexend, sans-serif;
+    font-weight: bolder;
+    margin: 0;
+    padding: 15px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    top: 0;
-    left: 0;
-  }
+    position: relative;
+}
 
 .logo-container {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 50%;
+    left: 15px; /* Distanza dal bordo sinistro */
+    transform: translateY(-50%); /* Centra verticalmente */
+    display: flex;
+    align-items: center;
 }
 
 .logo-container img {
-    height: 60px; /* Regola l'altezza del logo */
+    height: 40px; /* Altezza fissa per evitare problemi */
     width: auto;
     cursor: pointer;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h3{
