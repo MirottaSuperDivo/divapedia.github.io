@@ -214,3 +214,10 @@ button:hover{
         margin-bottom: 20px;
     }
 }
+
+@media (max-width: 600px) {
+    .logo-container img {
+        height: 50%; /* Riduce la grandezza del logo su schermi piccoli */
+        max-height: 40px; /* Imposta un limite massimo */
+    }
+}
